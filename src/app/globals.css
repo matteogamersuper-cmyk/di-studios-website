@@ -1,0 +1,162 @@
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #09090f;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 35px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff, #a78bfa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section p {
+  margin-top: 18px;
+  color: #9999aa;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+header button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #181823;
+  border: 1px solid #303044;
+  border-radius: 14px;
+}
+
+header button:hover {
+  background: #8055e8;
+  border-color: #a78bfa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(128, 85, 232, 0.3);
+}
+
+section button {
+  margin-top: 10px;
+  padding: 15px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  background: linear-gradient(135deg, #9565ff, #7040dc);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(149, 101, 255, 0.2);
+}
+
+section button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(149, 101, 255, 0.4);
+  background: linear-gradient(135deg, #a987ff, #8255ee);
+}
+
+section button:active {
+  transform: scale(0.96);
+}
+
+button svg,
+nav svg {
+  transition: transform 0.3s ease;
+}
+
+section button:hover svg {
+  transform: translateX(4px);
+}
+
+::selection {
+  background: #9565ff;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px !important;
+  }
+
+  section h2 {
+    letter-spacing: -2px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
+
+  section button {
+    padding: 14px 24px;
+  }
+}

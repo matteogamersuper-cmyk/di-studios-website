@@ -1,0 +1,161 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background: #09090f;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px 35px !important;
+}
+
+header h1 {
+  letter-spacing: -1px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+nav {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+section {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+}
+
+section h2 {
+  letter-spacing: -3px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #fff, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+section p {
+  color: #99a;
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  transition: all .3s;
+}
+
+header button {
+  color: #fff;
+  background: #181823;
+  border: 1px solid #303044;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+header button:hover {
+  background: #8055e8;
+  border-color: #a78bfa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px #8055e84d;
+}
+
+section button {
+  color: #fff;
+  letter-spacing: .3px;
+  background: linear-gradient(135deg, #9565ff, #7040dc);
+  border: 1px solid #ffffff1f;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  box-shadow: 0 5px 25px #9565ff33;
+}
+
+section button:hover {
+  background: linear-gradient(135deg, #a987ff, #8255ee);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px #9565ff66;
+}
+
+section button:active {
+  transform: scale(.96);
+}
+
+button svg, nav svg {
+  transition: transform .3s;
+}
+
+section button:hover svg {
+  transform: translateX(4px);
+}
+
+::selection {
+  color: #fff;
+  background: #9565ff;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px !important;
+  }
+
+  section h2 {
+    letter-spacing: -2px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
+
+  section button {
+    padding: 14px 24px;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_162hn9oqc8uss.css.map*/
