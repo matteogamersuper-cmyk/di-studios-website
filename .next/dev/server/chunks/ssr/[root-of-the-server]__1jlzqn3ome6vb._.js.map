@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///D:/Dibots/di-studios-website/src/app/contatti/page.tsx"],"sourcesContent":["import { ArrowRight, Menu} from \"lucide-react\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <main className=\"min-h-screen\">\r\n      <header className=\"flex items-center justify-between p-6\">\r\n        <h1 className=\"text-2xl font-bold\">DI Studios</h1>\r\n      </header>\r\n\r\n      <section className=\"flex min-h-[80vh] flex-col items-center justify-center gap-6\">\r\n        <h2 className=\"text-6xl font-bold tracking-tight\">\r\n          Contatti\r\n        </h2>\r\n        <p className=\"text-lg text-gray-500\">\r\n          https://discord.gg/F2atRwMmAW\r\n        </p>\r\n      </section>\r\n \r\n\r\n    </main>\r\n  );\r\n}"],"names":["Home","className"],"mappings":";;;;;;AAEe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAU;;0BACd,8OAAC;gBAAOA,WAAU;0BAChB,cAAA,8OAAC;oBAAGA,WAAU;8BAAqB;;;;;;;;;;;0BAGrC,8OAAC;gBAAQA,WAAU;;kCACjB,8OAAC;wBAAGA,WAAU;kCAAoC;;;;;;kCAGlD,8OAAC;wBAAEA,WAAU;kCAAwB;;;;;;;;;;;;;;;;;;AAQ7C"}}]
-}
